@@ -1,0 +1,65 @@
+
+<div class="container">
+  <div class="jumbotron jumbotron-fluid edina-header">
+     
+     
+      <h1 class="display-4 text-center">Edina Market Cleaners</h1>
+      <div>
+      <svg-icon class="logo"   src="../assets/iconTest.svg" ></svg-icon> 
+        <p class="lead text-center slogan">Let us handle your dirty laundry</p>
+        
+            <svg-icon class="logo"  src="../assets/iconTest.svg" ></svg-icon>
+        </div>
+        <div>
+          drop off before {{dropOff}}
+          pick up {{pickUp}}
+        </div>
+  </div>
+
+ 
+    <div class="card-deck">
+      <div class="card my-2 price-card" *ngFor="let option of services;" >
+          <div class="card-body mb-4">
+              <div class="price-card-icon">
+                <svg-icon [src]="option.icon" class="icon"></svg-icon>
+              </div>
+              <div class="price-card-title">
+                <h5 class="card-title">{{option.service}}</h5>
+              </div>
+              <table *ngIf="option.options" class="table table-striped">
+                <tbody>
+                  <tr *ngFor="let item of option.options;">
+                    <td>{{item.Title}}</td>
+                    <td>{{item.Price | currency}}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+               <!-- <div class="price-card-price">
+                 <div *ngIf="option.min">
+                   <b>{{option.min | currency }} min </b><span class="price-description"> {{option.price | currency }} {{option.description}}</span>
+                </div>
+                 <span *ngIf="!option.min"><b>{{option.price | currency }}</b> <span *ngIf="option.description" class="price-description">{{option.description}}</span></span>
+               </div> -->
+            <!-- </div> -->
+      
+      </div>
+    </div>
+   
+</div>
+<div class="credits">
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>
+    <!-- <div *ngFor="let option of services;" class="card"> -->
+      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+      <!-- <div class="card-body mb-4"> -->
+        <!-- <h5 class="card-title">{{option.service}}</h5> -->
+        <!-- <p>{{option.description}}</p> -->
+        <!-- <img src="option.icon" alt=""> -->
+        <!-- <span>{{option.price}}</span> -->
+        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      <!-- </div>
+ 
+</div> -->

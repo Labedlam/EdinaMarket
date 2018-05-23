@@ -1,0 +1,115 @@
+$primary-color:  #CADD6E;
+$secondary-color: gray;
+$tertiary-color: #9ab223;
+
+.container{
+    max-width: 100vw;
+    .jumbotron{
+        color: $primary-color;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0 ;
+    }
+   
+}
+.slogan{
+    display:inline-block;
+    text-align: center;
+}
+.logo{
+    display:inline-block;
+    // text-align: center;
+    // svg-icon{
+        height:50px; 
+        width: 50px;
+        fill: $primary-color;
+    // }
+ 
+}
+.edina-header{
+    color: $tertiary-color;
+    background-color:black;
+    font-weight: bold;
+}
+
+.card-deck{
+    margin-bottom:20px;
+}
+.price-card{
+    .card-body{
+        .icon{
+            height: 50px;
+            width: 50px;
+            fill: $tertiary-color;
+        }
+        // padding:15px px 5px 5px;
+        text-align: center;
+        img{
+            align-content: center
+        }
+        .price-card-title{
+            margin-top: 15px;
+         
+            h5{
+                font-size: 1.5em;
+                margin-bottom:0;
+            }
+            
+        }
+        .price-card-price{
+            margin-top: 15px;
+            font-size: 2em;
+            color: $tertiary-color;
+            .price-description{
+                display:block;
+                font-size: .5em;
+                color: $secondary-color;
+            }
+        }
+        table{
+            margin: 10px 0 0 0;
+            td{
+                font-size: 1.2em;
+            }
+        }
+    }
+        
+}
+.card-body{
+    display:grid;
+    // grid-template-rows: repeat(auto-fill,minmax(50px, 1fr));
+    grid-template-rows: repeat(2,50px);
+    margin: 0 0 0 0;
+}
+
+
+// Bootstrap 4 breakpoints & gutter
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+$grid-gutter-width: 30px !default;
+
+// number of cards per line for each breakpoint
+$cards-per-line: (
+    xs: 1,
+    sm: 2,
+    md: 3,
+    lg: 3,
+    xl: 3
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+	@media (min-width: $breakpoint) {
+		.card-deck .card {
+			flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+		}
+	}
+}
+.credits{
+    text-align: center;
+    font-size: .5em;
+}
