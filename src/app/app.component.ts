@@ -22,11 +22,11 @@ export class AppComponent  {
         maxPrice: 8.99,
         min: null,
         options:[
-          {Title: 'Blouse, Choir Robe, Dress, Lining, Pants, Robe ,Scarf, Shirt, Shorts, Skirt, Sweater, Tie, Vest  ', Description: 'test', Price: 5.99},
+          {Title: 'Blouse, Choir Robe, Dress, Lining, Pants, Robe, Scarf, Shirt, Shorts, Skirt, Sweater, Tie, Vest', Description: 'test', Price: 5.99},
           {Title: 'Jacket  ', Description: 'test', Price: 6.99},
           {Title: 'Coat, Jumpsuit', Description: 'test', Price: 7.99},
           {Title: 'Down Coat', Description: 'test', Price: 8.99},
-          {Title: '2 pieces suit', Description: 'test', Price: 10.99}
+          {Title: '2 piece suit', Description: 'test', Price: 10.99}
         ]
       },
       {
@@ -76,10 +76,10 @@ export class AppComponent  {
         options:[
           {Title: 'Blanket, Duvet Cover', Description: 'test', Price: 21.99},
           {Title: 'Comforter', Description: 'test', Price: 24.99},
-          {Title: 'Rug 3x5 ', Description: 'test', Price: 29.85},
-          {Title: 'Leather Boots   ', Description: 'test', Price: 42},
+          {Title: 'Rug 3x5', Description: 'test', Price: 29.85},
+          {Title: 'Leather Boots', Description: 'test', Price: 42},
           {Title: 'Rug 4x6', Description: 'test', Price: 47.76},
-          {Title: 'Rug 5x8 ', Description: 'test', Price: 79.6},
+          {Title: 'Rug 5x8', Description: 'test', Price: 79.6},
         ]
       },
       // {
