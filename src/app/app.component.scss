@@ -6,6 +6,8 @@ $tertiary-color: #9ab223;
 .container{
     font-family: 'Roboto Slab', serif, bold;
     max-width: 100vw;
+    // font-weight:700;
+    font-size: 1.4em;
     .jumbotron{
         color:#ffffff;
         // padding: 0 0 0 0;
@@ -49,8 +51,8 @@ $tertiary-color: #9ab223;
     }
 }
 .timing-header{
-    h4{
-         font-weight: bold;
+    h2{
+         font-weight: 700;
     }
    
     // color:$tertiary-color;
@@ -73,15 +75,15 @@ $tertiary-color: #9ab223;
         .price-card-title{
             margin-top: 15px;
          
-            h5{
-                font-size: 1.5em;
-                margin-bottom:0;
+            h1{
+                // font-size: 1.5em;
+                // margin-bottom:15px;
             }
             
         }
         .price-card-price{
             margin-top: 15px;
-            font-size: 2em;
+            // font-size: 2em;
             color: $tertiary-color;
             .price-description{
                 display:block;
@@ -90,7 +92,7 @@ $tertiary-color: #9ab223;
             }
         }
         table{
-            margin: 10px 0 0 0;
+            margin: 20px 0 0 0;
             td{ 
                
                 font-size: 1.2em;
