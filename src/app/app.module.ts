@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 
+import {AdminModule} from './admin/admin.module';
 
 import { AppComponent } from './app.component';
 
@@ -12,8 +13,12 @@ import * as $ from 'jquery';
     AppComponent
   ],
   imports: [
+    //Angular Modules
     BrowserModule,
-    AngularSvgIconModule
+    AngularSvgIconModule,
+
+    //Custom Modules
+    AdminModule
 
   ],
   providers: [],

@@ -1,21 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+//interfaces
+import {OptionItem} from '../app/admin/models/admin-models';
+import {ServiceItem} from '../app/admin/models/admin-models';
+import {ServiceItems} from '../app/admin/models/admin-models';
 
-interface OptionItem {
-  Title: string; Description: string; Price: number
-}
-
-interface ServiceItem{
-  icon?: string,
-  service: string,
-  description?: string,
-  minPrice: number,
-  maxPrice: number,
-  min?: number,
-  options: OptionItem[]
-}
-
-interface ServiceItems extends Array<ServiceItem>{}
 
 @Component({
   selector: 'app-root',
