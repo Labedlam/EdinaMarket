@@ -61,7 +61,8 @@ $tertiary-color: #9ab223;
     // color:$tertiary-color;
 }
 .card-deck{
-    margin-bottom:20px;
+    //remove on tv screen;
+    // margin-bottom:20px;
 }
 .price-card{
     .card-body{
@@ -116,6 +117,9 @@ $tertiary-color: #9ab223;
     // grid-template-rows: repeat(auto-fill,minmax(50px, 1fr));
     grid-template-rows: repeat(2,50px);
     margin: 0 0 0 0;
+}
+.credits{
+    background: black;
 }
 
 
