@@ -1,7 +1,9 @@
 $primary-color:  #CADD6E;
 $secondary-color: gray;
 $tertiary-color: #9ab223;
-
+body{
+    background-color: black;
+}
 
 .container{
     background-color: black;
@@ -120,6 +122,7 @@ $tertiary-color: #9ab223;
 }
 .credits{
     background: black;
+    height: auto;
 }
 
 
