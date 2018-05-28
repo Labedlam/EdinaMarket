@@ -127,7 +127,7 @@ export class AppComponent  {
     ]
  
 
- dropOff = '5:00PM';
- pickUp = '12:00PM';
+ dropOff = '9:00 AM';
+ pickUp = '6:00 PM';
   
   }
